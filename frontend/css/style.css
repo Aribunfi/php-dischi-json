@@ -2,6 +2,33 @@ header {
     background-color: black;
 }
 
-.header-left > img {
-width: 150px;
+.container {
+    width: 1200px;
+    height: 100%;
+
 }
+
+
+.disc > img {
+    width: 250px;
+}
+
+#discs-container, #disc-details-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.disc {
+    flex-basis: calc(100% / 4);
+    flex-grow: 0;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    background: #112030;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
