@@ -23,9 +23,9 @@
     <div class="container">
         <div class="discs-container">
             <div class="disc" v-for="disc in discs">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <small>Bon Jovi</small>
+                <img :src="disc.poster" />
+                <h3>{{ disc.title }}</h3>
+                <small>{{ disc.author }}</small>
                 <small>Rock</small>
                 <strong>1988</strong>
                 <div class="close-button-container">
