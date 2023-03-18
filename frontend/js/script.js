@@ -55,7 +55,9 @@ createApp ({
 
     methods: {
         fetchDiscs() {
-            axios.get("/dischi/API/get-discs.php");
+            axios.get("/dischi/API/get-discs.php").then((response) => {
+                console.log(response.data);
+            });
         },
         showDiscDetails() {},
         hideDiscDetails() {},
