@@ -54,11 +54,13 @@ createApp ({
     },
 
     methods: {
-        getDiscs() {},
+        fetchDiscs() {
+            axios.get("/dischi/API/get-discs.php");
+        },
         showDiscDetails() {},
         hideDiscDetails() {},
     },
     created() {
-        this.getDiscs();
+        this.fetchDiscs();
     },
 }).mount("#app");
