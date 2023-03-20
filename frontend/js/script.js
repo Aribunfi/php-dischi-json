@@ -12,7 +12,7 @@ createApp({
 
   methods: {
     fetchDiscs() {
-      axios.get("/dischi/API/get-discs.php").then((response) => {
+      axios.get("localhost/dischi/API/get-discs.php").then((response) => {
         // console.log(response.data);
         this.discs = response.data;
       });
